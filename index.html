@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Pink Goose</title>
@@ -14,22 +14,23 @@
         rel="stylesheet">
 </head>
 
-<body class="section-border">
 
-   
-        <header>
-            <div class="header">
-                <div>Pink <span id="pink">Goose</span></div>
-                <div class="header-buttons-container">
-                    <a class="header-button-color">Home</a>
-                    <a class="header-button-color">Learn</a>
-                    <a class="header-button-color">About</a>
-                    <a class="header-button-color">Contact</a>
-                </div>
-                <a class="header-login">Login</a>
+<body>
+
+    <!-- header bovenkant van de pagina om te navigeren -->
+    <header>
+        <div class="header">
+            <div>Pink <span id="pink">Goose</span></div>
+            <div class="header-buttons-container">
+                <a class="header-button-color" href="index.html" style="text-decoration:none">Home</a>
+                <a class="header-button-color" href="learn.html" style="text-decoration:none">Learn</a>
+                <a class="header-button-color" href="about.html" style="text-decoration:none">About</a>
+                <a class="header-button-color" href="contact.html" style="text-decoration:none">Contact</a>
             </div>
-        </header>
-
+            <a class="header-login">Login</a>
+        </div>
+    </header>
+    <section class="section-border">
         <h1> The easiest way<br> to start a Goose</h1>
 
         <p class="center-text">An all-in-one platform to start, manage and grow <br> a decentralized autonomous
@@ -39,18 +40,19 @@
 
         <h2>Ready for every project</h2>
 
-        <section class="section-border dao-buttons">
+        <ul class="section-border dao-buttons">
             <li id="invest">Investment DAO</li>
             <li id="startup">Startup DAO</li>
             <li id="service">Service DAO</li>
             <li id="comunity">Comunity DAO</li>
             <li id="impact">Impact DAO</li>
-            <li id="defi">DeFi DAO</li>   
+            <li id="defi">DeFi DAO</li>
             <li id="more">+More</li>
-        </section>
+        </ul>
 
+        <!-- het grote plaatje in het midden van de home page -->
         <div class="section-border crop">
-         <img src="img/bigfarma.png" alt="main-img">
+            <img src="img/bigfarma.png" alt="main-img">
         </div>
 
         <div class="img-text">
@@ -82,7 +84,7 @@
         <div class="workswith-container">
             <div>Ethereum</div>
             <div>Polygon</div>
-            <div>Gnosis safe</div>
+            <div>Gnosis safe</div>  
             <div>Snapshot</div>
             <div>ENS</div>
             <div>OpenSea</div>
@@ -90,7 +92,7 @@
 
         <h2>Help at every step</h2>
 
-        <div class="workswith-container ">
+        <div class="workswith-container">
             <a> <img src="img/coworker1.png" alt="coworker1"> </a>
             <a> <img src="img/coworker2.png" alt="coworker2"> </a>
             <a> <img src="img/coworker3.png" alt="coworker3"> </a>
@@ -98,23 +100,25 @@
             <a> <img src="img/coworker5.png" alt="coworker5"> </a>
         </div>
 
-        <div class="h3-container section-border">
-            <h2> Success manageres</h2>
-            <h2>Knowledge base</h2><br>
-            <h2>Chat support</h2>
-            <h2>Tutorials</h2>
-            <h2>Templates</h2>
-            <h2>Smart Contract development</h2>
-            <h2>Events</h2>
-            <h2>Education</h2>
-            <h2>Guides</h2>
-        </div>
+        <ul class="list-container section-border">
+            <li> Success manageres</li>
+            <li>Knowledge base</li>
+            <li>Chat support</li>
+            <li>Tutorials</li>
+            <li>Templates</li>
+            <li>Smart Contract development</li>
+            <li>Events</li>
+            <li>Education</li>
+            <li>Guides</li>
+        </ul>
 
         <section class="weekly-digest-box">
             <h2>Weekly digest</h2>
             <p class="center-text">Latest news in DAOs en web3</p>
-            <input placeholder="Your email" id="subscribe-field" type="email" name="email" required>
-            <button id="subscribe-button" type="submit">subscribe </button>
+            <form>
+                <input type="email" placeholder="Your email" name="email" class="subscribe-field">
+                <button type="submit" id="subscribe-button">subscribe </button>
+            </form>
         </section>
 
         <section class="press-box">
@@ -179,28 +183,29 @@
         <h3 id="end-text" class="center-text">Let's chat and see how we can help</h3>
 
         <section class="end-blocks">
-            <div class="img-box"> <img src="img/plane.png" ></div>
-            <div class="img-box"> <img src="img/monkeytail.png"> </div>
+            <div id="telegram"> <img src="img/plane.png" alt="monkeytail" height="52" width="52">
+                <p><b>telegram</b> @superdao_team</p>
+            </div>
+            <div id="email"> <img src="img/monkeytail.png" alt="monkeytail" height="52" width="52">
+                <p><b>email</b> hello@superdao.co</p>
+            </div>
         </section>
-
+    </section>
     <footer>
-        <div></div>
-        <div></div>
-        <div class="footer-box">
-            <a>about</a>
-            <a>jobs</a>
-            <a>legal</a>
-        </div>
-        <div class="footer-pictures">
-            <div id="twitter"> <img src="img/twitter-brands-solid.png" alt="twitter"> </div>
-            <div id="paperplane"> <img src="img/paper-plane-solid.png" alt="paperplane"> </div>
-            <div id="youtube"> <img src="img/youtube-brands-solid.png" alt="youtube"> </div>
-            <div id="discord"> <img src="img/discord-brands-solid.png" alt="discord"> </div>
+        <div class="footer-container">
+            <div class="footer-box">
+                <a>about</a>
+                <a>jobs</a>
+                <a>legal</a>
+            </div>
+            <div class="footer-pictures">
+                <div id="twitter"> <img src="img/twitter-brands-solid.png" alt="twitter"> </div>
+                <div id="paperplane"> <img src="img/paper-plane-solid.png" alt="paperplane"> </div>
+                <div id="youtube"> <img src="img/youtube-brands-solid.png" alt="youtube"> </div>
+                <div id="discord"> <img src="img/discord-brands-solid.png" alt="discord"> </div>
+            </div>
         </div>
     </footer>
-
 </body>
-
-
 
 </html>
